@@ -85,7 +85,7 @@ So there is a quick list for you, my impatient friend:
 - `mv` - move from one location to another, will work with both directories and files.
 - `cp` - copy, add `-r` if you are copying a directory, it means "recursive", so it will copy directory
   and everything inside. I hope you know what recursion means.
-- `rm` - remove. May be replaced with `mv something /dev/zero`, if you are desperate enough, but don't really
+- `rm` - remove. May be replaced with `mv something /dev/null`, if you are desperate enough, but don't really
   try it until you want to remove that "something". If you need more information on this, take a look at `man rm`.
 - `echo` - write. Literally, just write whatever you throw into it's arguments. For example, you can do
   `echo *` if you accidentally nuked your coreutils and still want to list contents of a directory.
@@ -242,7 +242,7 @@ isn't 0, you know something went wrong. To see this value for your last command,
 
 
 #### AND & OR
-Sometimes you want to execute a command only if previos command didn't return an error or the opposite, run only if there was an error.
+Sometimes you want to execute a command only if previous command didn't return an error or the opposite, run only if there was an error.
 But writing a whole if statement for this is a bit of overkill, so that's why we have `&&` and `||` operators. It's all dead simple,
 `&&` means that next command will execute if previous one returned 0, `||` means that it will execute if previous one returned anything
 other than 0.
@@ -344,7 +344,7 @@ doing this here is your example:
 ```bash
 #!/usr/bin/env bash
 
-trap 'echo "Catched SIGINT"' INT
+trap 'echo "Caught SIGINT"' INT
 
 sleep 9000
 ```
