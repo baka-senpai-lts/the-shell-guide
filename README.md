@@ -174,7 +174,7 @@ stdout to be exact), but I will show you some basic usage.
 
 First of all, what is a pipe. Pipe is a simple blah-blah-blah, it just puts output of one command into input of other
 command, that simple. So if you ever wanted to concatenate two files and filter only lines containing word "lol", you
-can do `cat file1 file2 | grep "cat"` and here you go, congratulations, you've achieved your first completely useless
+can do `cat file1 file2 | grep "lol"` and here you go, congratulations, you've achieved your first completely useless
 pipe, I am proud of you.
 
 Now that we've convered pipe, let's talk about redirection. It just allows you to redirect output into files or
