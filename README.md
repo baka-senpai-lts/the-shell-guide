@@ -126,7 +126,7 @@ And in the same place you will find out how to configure it and get some more ad
 ## Environment
 So you saw me referring to some strange stuff with dollar sign before. These are variables. And yeah, there is
 plenty of them, may not even try to remember all. Just remember this:
-- If something starts with a "$" and it isn't in single quotes and isn't following the "\" symbol, it's a variable.
+- If something starts with a "$" and it isn't in single quotes and isn't following the "\\" symbol, it's a variable.
 - To set some variable for your current shell session, use `export`, for example `export SOME_VARIABLE=some_value`
   will do exactly what it says and now for current session `$SOME_VARIABLE` will be `"some_value"`.
 - If you want to take a look at what some variable contains, just use `echo $SOME_VARIABLE`.
